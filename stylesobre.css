@@ -142,5 +142,18 @@ footer {
   height: 100%;
   }
 
+  .fundo_video {
+    width: 85%;
+    margin-left: 10%;
+  }
+   
+
+
+  .video {
+   display: flex;
+   overflow: hidden;
+
+  }
+
 
  
