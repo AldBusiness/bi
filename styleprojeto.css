@@ -37,12 +37,12 @@ nav ul li {
 }
 
 nav ul li.menuactive a {
-  color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
+  color: rgb(255, 255, 255); /* Altere a cor do texto conforme necessário */
   border-radius: 5%;
   padding: 5px;
   margin: 2px;
   font-size: 14px;
-  text-decoration:underline;
+  background-color: rgb(0, 70, 136);
 }
 
 
@@ -145,7 +145,7 @@ nav ul li.menuactive .submenu a {
 nav ul li.menuactive .submenu a:hover {
   color: #ffffff;
   transition: 0.3s;
-  background-color: rgb(15, 103, 0);
+  background-color: rgb(0, 70, 136);
   font-size: 13px;
 }
 
