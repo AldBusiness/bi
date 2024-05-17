@@ -25,10 +25,9 @@
 
 <nav>
     <ul>
-        <li> <a href="index.html">Inicio</a></li>
-        <li> <a href="sobre.html">Duvidas</a></li>
-        <li> <a href="portifolio.html">Projetos</a></li>
-        <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Plan/Custo</a>
+
+        <li> <a href="index.html">↩️</a></li>
+        <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Dashboards⬇️</a>
             <div class="submenu" id="submenu">
 
                 <a href="#" onclick="mostrarIframe('desenvolvimento1','Comparativo Gestor CS x TOTVS')">Comparativo Gestor CS x TOTVS</a>
@@ -38,7 +37,7 @@
 
             </div>
         </li>
-        <li class="titulo-projeto"> <h2 id="titulo_projeto"> << selecionar relatório aqui</h2>  </li>
+        <li class="titulo-projeto"> <h2 id="titulo_projeto"> Plan/Custo </h2>  </li>
     </ul>
  </nav>
 
@@ -59,8 +58,10 @@
        
   </div>
 
+
+
   <div id="loader" class="loader"></div>
-  <h1 id="message" class="hidden">Site carregado, por favor selecione seu relatório✅</h1>
+  <h1 id="message" class="hidden">✅Página carregada! selecione os Dashboards📊 | F11 Tela cheia</h1>
 
 
    <!-- Função para definir qual iframe aparecer -->
@@ -78,7 +79,7 @@
         iframeMostrar.style.display = 'block';
 
         // Atualiza o título do projeto com base no iframe selecionado
-        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11" 
+        document.getElementById('titulo_projeto').textContent = "Plan/Custo ➡️" + descricao 
     }
   </script>
   

@@ -29,15 +29,6 @@ nav li{
   display: inline-block;
 }
 
-nav li.portifolioactive a {
-  color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
-  border-radius: 5%;
-  padding: 5px;
-  margin: 2px;
-  font-size: 14px;
-  text-decoration:underline;
-  
-}
 
 
 nav li a {
@@ -50,18 +41,6 @@ nav li a {
 
 }
  
-
-nav li a:hover{
-  padding: 5PX;
-  background-color: rgb(206, 206, 206);
-  color: rgb(3, 3, 3);
-  z-index: 1;
-  border-radius: 5%;
-  transition: all 0.2s; 
-  margin: 3px;
-
-}
-
 
 .submenu{
     position: absolute;
@@ -103,8 +82,8 @@ nav li a:hover{
     border-radius: 10px;
     padding: 20px;
     display: inline-flex;
-    position: relative;
-    margin-top: 4%;
+    position: absolute;
+    margin-top: 6%;
     margin-left: 50px;
     font-family: sans-serif;
     color: #000000;

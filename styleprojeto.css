@@ -8,17 +8,12 @@
 body {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    background-image: url(./image/tela-selecione-projeto.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100vw;
-    height: 100vh;
+
      }
 
 
 nav {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(46, 46, 46);
   position: fixed;
   width: 100%;
   top: 0;
@@ -37,12 +32,11 @@ nav ul li {
 }
 
 nav ul li.menuactive a {
-  color: rgb(255, 255, 255); /* Altere a cor do texto conforme necessário */
-  border-radius: 5%;
+  color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
   padding: 5px;
   margin: 2px;
   font-size: 14px;
-  background-color: rgb(0, 70, 136);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -57,7 +51,6 @@ nav ul li a {
 
 nav li a:hover {
   padding: 5px;
-  background-color: rgb(255, 255, 255);
   color: rgb(3, 3, 3);
   z-index: 1;
   transition: all 0.2s;
@@ -93,7 +86,7 @@ iframe {
 .titulo-projeto {
   list-style: none; /* Remove a marcação de lista */
   font-size: 10px; /* Define o tamanho da fonte */
-  color: #000000; /* Define a cor do texto */
+  color: #ffffff; /* Define a cor do texto */
   text-decoration: none;
   font-family: sans-serif;
   padding: 8px;
@@ -117,6 +110,7 @@ iframe {
 .hidden {
   opacity: 0;
   pointer-events: none;
+
 }
 
 @keyframes spin {
@@ -143,9 +137,9 @@ nav ul li.menuactive .submenu a {
 }
 
 nav ul li.menuactive .submenu a:hover {
-  color: #ffffff;
+  color: #000000;
   transition: 0.3s;
-  background-color: rgb(0, 70, 136);
+  background-color: rgb(255, 255, 255);
   font-size: 13px;
 }
 
@@ -154,5 +148,9 @@ h2 {
 
   font-size: 14px;
   font-family: sans-serif;
-  color: #000000;
+  color: #ffffff;
  }
+
+ 
+
+
