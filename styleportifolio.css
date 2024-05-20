@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(./image/fundo-portifolio-4.jpeg);
+  background-image: url(./image/analise-de-dados-como-estruturar.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -17,7 +17,7 @@ body{
 
 
 nav {
-  background-color:rgb(236, 236, 236);
+  background-color: rgb(46, 46, 46);
   position: fixed; /* Torna o navbar fixo */
   width: 100%; /* Define a largura total */
   top: 0; /* Posiciona o navbar no topo */
@@ -33,7 +33,7 @@ nav li{
 
 nav li a {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   text-decoration: none;
   padding: 8px; 
@@ -188,12 +188,3 @@ nav li a {
   border-radius: 5px;
   color: rgb(0, 0, 0);
  }
-
-
- .cards-container {
-  margin-top: 8%;
-  background-color: #ffffff;opacity:0.9;
-  height: 100%;
- }
-
-

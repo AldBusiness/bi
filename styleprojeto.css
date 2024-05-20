@@ -35,14 +35,14 @@ nav ul li.menuactive a {
   color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
   padding: 5px;
   margin: 2px;
-  font-size: 14px;
+  font-size: 17px;
   background-color: rgb(255, 255, 255);
 }
 
 
 nav ul li a {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   text-decoration: none;
   padding: 8px;
@@ -68,7 +68,7 @@ nav li a:hover {
 
 .submenu a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(248, 248, 248);
   padding: 8px;
   text-decoration: none;
 }
@@ -137,16 +137,16 @@ nav ul li.menuactive .submenu a {
 }
 
 nav ul li.menuactive .submenu a:hover {
-  color: #000000;
+  color: #ffffff;
   transition: 0.3s;
-  background-color: rgb(255, 255, 255);
-  font-size: 13px;
+  background-color: rgb(46, 46, 46);
+  transition: 0.5s;
 }
 
 
 h2 {
 
-  font-size: 14px;
+  font-size: 17px;
   font-family: sans-serif;
   color: #ffffff;
  }
