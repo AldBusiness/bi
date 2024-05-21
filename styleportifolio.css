@@ -73,7 +73,18 @@ nav li a {
   iframe{
     border: none;
   }
+ 
 
+
+
+  .cards-container {
+    margin-top: 50px;
+    margin-left: -20px;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+ 
+  }
 
   .card {
     width: 200px;
@@ -82,7 +93,7 @@ nav li a {
     border-radius: 10px;
     padding: 20px;
     display: inline-flex;
-    position: absolute;
+    position: relative;
     margin-top: 6%;
     margin-left: 50px;
     font-family: sans-serif;
@@ -93,12 +104,11 @@ nav li a {
   .card:hover {
    
     background-color: #f0f0f0;
-    border-radius: 10%;
     padding: 20px;
     margin-left: 50px;
     display: inline-flex;
     position: relative;
-    box-shadow: 1px 2px 16px rgb(0, 0, 0);
+    box-shadow: 1px 2px 16px rgb(255, 59, 10);
     transition: 0.5s;
 
   }
@@ -144,7 +154,7 @@ nav li a {
     padding-left: 2px;
     padding-right: 2px;
     background-color: #ededed;opacity:0.9;
-    color: rgb(0, 0, 0);
+    color: rgb(29, 29, 29);
   }
 
 
@@ -162,7 +172,7 @@ nav li a {
     padding-left: 2px;
     padding-right: 2px;
     transition-duration: 0.3s;
-    background-color:  rgb(28, 28, 28);
+    background-color:  rgb(58, 58, 58);
     color: #ffffff;
   }
 
