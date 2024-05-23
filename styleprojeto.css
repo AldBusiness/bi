@@ -93,19 +93,6 @@ iframe {
 }
 
 
-.loader {
-  border: 16px solid #ffffff; /* Light grey */
-  border-top: 16px solid #1f1f1f; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  position: absolute;
-  top: 41%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease;
-}
 
 .hidden {
   opacity: 0;
@@ -122,9 +109,10 @@ iframe {
    text-align: center;
    position: relative;
    margin-top: 220px;
-   text-decoration: none;
-   font-size:medium;
+   text-decoration:dotted;
+   font-size:18px;
    font-family: sans-serif;
+
 }
 
 nav ul li.menuactive .submenu a {
