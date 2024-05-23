@@ -111,7 +111,7 @@ iframe {
    margin-top: 220px;
    text-decoration:dotted;
    font-size:18px;
-   font-family: sans-serif;
+   font-family:'Times New Roman', Times, serif;
 
 }
 
@@ -142,7 +142,7 @@ h2 {
 
 
  i {
-  color: blue;
+  color: rgb(0, 0, 0);
   font-style: unset;
   font-size: 19px;
  }
@@ -155,12 +155,10 @@ h2 {
  }
 
 
-
  .na ul li img {
   margin-right: 4px; /* Espaçamento entre o ícone e o texto */
-  width: 25px; /* Ajuste o tamanho conforme necessário */
-  height: 25px; /* Ajuste o tamanho conforme necessário */
-  margin-bottom: -07px;
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+
  }
 
  .seta_para_dash img
