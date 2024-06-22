@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(./image/Metodologia_de_analise_de_dados.png);
+  background-image: url(./image/TELA\ FUNDO\ OFC.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -17,7 +17,7 @@ body{
 
 
 nav {
-  background-color: rgb(236, 236, 236);
+  background-color: rgba(236, 236, 236, 0.815);
   position: fixed; /* Torna o navbar fixo */
   width: 100%; /* Define a largura total */
   top: 0; /* Posiciona o navbar no topo */
@@ -86,7 +86,7 @@ nav li a {
   .card {
     width: 200px;
     height: 200px;
-    background-color: #e4e4e4;opacity:0.9;
+    background-color: #d8d5d5;
     border-radius: 10px;
     padding: 20px;
     display: inline-flex;
@@ -96,6 +96,7 @@ nav li a {
     font-family: sans-serif;
     color: #000000;
     transition: 0.3s;
+    margin-bottom: 4%;
   }
   
   .card:hover {
@@ -105,7 +106,7 @@ nav li a {
     margin-left: 50px;
     display: inline-flex;
     position: relative;
-    box-shadow: 1px 2px 16px rgb(255, 59, 10);
+    box-shadow: 1px 2px 16px rgb(255, 255, 255);
     transition: 0.5s;
 
   }
@@ -167,7 +168,7 @@ nav li a {
     padding-left: 2px;
     padding-right: 2px;
     transition-duration: 0.3s;
-    background-color:  rgb(58, 58, 58);
+    background-color:  rgb(218, 105, 0);
     color: #ffffff;
   }
 
