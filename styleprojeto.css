@@ -119,11 +119,10 @@ nav ul li.menuactive .submenu a {
 }
 
 nav ul li.menuactive .submenu a:hover {
-  color: #1a1a1a;
+  color: #ffffff;
   transition: 0.3s;
-  background-color: rgb(255, 252, 252);
+  background-color: rgb(218, 105, 0);
   transition: 0.5s;
-  font-size: 15px;
 }
 
 
