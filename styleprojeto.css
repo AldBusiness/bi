@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-
      }
 
 
@@ -92,12 +90,9 @@ iframe {
   padding: 8px;
 }
 
-
-
 .hidden {
   opacity: 0;
   pointer-events: none;
-
 }
 
 @keyframes spin {
@@ -112,7 +107,6 @@ iframe {
    text-decoration:dotted;
    font-size:18px;
    font-family:'Times New Roman', Times, serif;
-
 }
 
 nav ul li.menuactive .submenu a {
@@ -158,7 +152,6 @@ h2 {
  .na ul li img {
   margin-right: 4px; /* Espaçamento entre o ícone e o texto */
   width: 50px; /* Ajuste o tamanho conforme necessário */
-
  }
 
  .seta_para_dash img
@@ -168,7 +161,6 @@ h2 {
   position: fixed;
   margin-top: -265px;
   margin-left: 87px;
-  
  }
 
  .dash_texto img {
