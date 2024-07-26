@@ -16,7 +16,7 @@ body{
 }
 
 nav {
-  background-color: rgba(236, 236, 236, 0.815);
+  background-color: rgb(236, 236, 236);
   position: fixed; /* Torna o navbar fixo */
   width: 100%; /* Define a largura total */
   top: 0; /* Posiciona o navbar no topo */
