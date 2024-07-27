@@ -6,61 +6,26 @@
     <title>ALD - Business</title>
     <link rel="stylesheet" href="styleportifolio.css">
     <link rel="icon" href="./image/Logo-Curvas2-1024x491.png">
-    
-    
-    
 </head>
-
-<style>
-
-</style>
-
 <body>
-     
-<!--começa os menus-->  
+    <nav>
+        <ul>
+            <li class="portifolioactive">
+                <a href="index.html">ALD Bioenergia Deciolândia S/A - Bem-vindo ao portifólio Business Intelligence </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="card">
+        <h2 class="card-header">Selecione área</h2>
+        <div class="card-content">
+            <ul class="project-list">
+                <li><a href="plan_custo.html">PLAN/CUSTO</a></li>
+                <li><a href="industria.html">INDUSTRIA</a></li>
+                <li><a href="governanca_ti.html">GOVERNANÇA TI</a></li>
 
-  <nav> 
-  <ul>
-  <li class="portifolioactive"> <a href="index.html"> ALD Bioenergia Deciolândia S/A - Bem vindo a portfólio de business cases da ALD - Bioenergia</a>         
-  </li>
- 
-  </ul>
-  </nav> 
-  
-<div class="cards-container">
-  
-  <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-    <h2>PLAN/CUSTO:</h2>
-    <p>Informações sobre investimentos, entrada de bens, orcado x real, custo de formação e outros.</p>
-    <button class="button" onclick="location.href='plan_custo.html'">Acessar Projeto</button>
-  </div> 
-
-  <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-    <h2>INDUSTRIA:</h2>
-    <p>Informações sobre eficiência industrial, ordens de produção e outros.</p>
-    <button class="button" onclick="location.href='industria.html'">Acessar Projeto</button>
-  </div>
-
-  <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
-    <h2>GOVERNANÇA TI:</h2>
-    <p>Informações sobre controle de usuario, chamados, tecnologia de informação e outros.</p>
-    <button class="button" onclick="location.href='governanca_ti.html'">Acessar Projeto</button>
-  </div>
-   
-</div>
- 
-  <script>
-    function showButton(card) {
-      var button = card.querySelector('.button');
-      button.style.display = 'block';
-    }
-    
-    function hideButton(card) {
-      var button = card.querySelector('.button');
-      button.style.display = 'none';
-    }
-    </script>
-
-
+                <!-- Adicione mais projetos conforme necessário -->
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
