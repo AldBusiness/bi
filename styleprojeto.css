@@ -35,6 +35,7 @@ nav ul li.menuactive a {
   margin: 2px;
   font-size: 14px;
   background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 
@@ -197,11 +198,13 @@ h2 {
 }
 
 .imprimir_pdf:hover {
-  background-color: rgb(218, 255, 10);;
+  background-color: rgb(174, 225, 255);;
   border: #070707;
+  transition: 0.5s;
 }
 
 .tela_cheia:hover {
-  background-color: rgb(218, 255, 10);;
+  background-color: rgb(174, 225, 255);;
   border: #070707;
+  transition: 0.5s;
 }
