@@ -11,7 +11,7 @@ body {
 
 
 nav {
-  background-color: rgb(28, 88, 255);
+  background-color: #106EBE;
   position: fixed;
   width: 100%;
   top: 0;
@@ -60,7 +60,7 @@ nav li a:hover {
 .submenu {
   display: none;
   position: fixed;
-  background-color: rgb(28, 88, 255);
+  background-color: #106EBE;
   width: auto;
   transition-duration: 10s;
   overflow-y: auto;
@@ -120,7 +120,7 @@ iframe {
 }
 
 nav ul li.menuactive .submenu a {
-  background-color: rgb(28, 88, 255);
+  background-color: #106EBE;
   color: #e0e0e0;
   border: none;
   transition: 0.5s;
@@ -201,7 +201,7 @@ h2 {
   padding: 5px;
   margin-top: 4px;
   border-radius: 10px;
-  background-color:  rgb(28, 88, 255);
+  background-color:  #106EBE;
   color: #ffffff;
   
 }
