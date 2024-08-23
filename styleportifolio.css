@@ -62,12 +62,14 @@ nav li a {
 
 .project-list {
   list-style: none;
+  padding: 0;
 }
 
 .project-list li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
-  align-items: center; /* Alinha ícones e texto na vertical */
+  align-items: center;
+  transition: transform 0.3s;
 }
 
 .project-list a {
@@ -79,13 +81,10 @@ nav li a {
   align-items: center;
 }
 
-.project-list a:hover {
-  color: #ea5600;
-  font-size: 15px;
-  transition-duration: 0.5s;
-  text-decoration: dotted;
-  font-family: Arial, Helvetica, sans-serif;
+.project-list li:hover {
+  transform: translateX(10px);
 }
+
 
 .logo-ald {
   position: relative;
