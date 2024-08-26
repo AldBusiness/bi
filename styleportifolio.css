@@ -58,6 +58,7 @@ nav li a {
   margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .project-list {
@@ -83,6 +84,7 @@ nav li a {
 
 .project-list li:hover {
   transform: translateX(10px);
+  text-decoration: underline;
 }
 
 
