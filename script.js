@@ -56,3 +56,23 @@ document.addEventListener('MSFullscreenChange', (event) => {
     isFullScreen = !!document.msFullscreenElement;
 });
 
+
+function toggleMenu() {
+    var menu = document.getElementById('menu_of');
+    
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('visible');
+    } else {
+        menu.classList.remove('visible');
+        menu.classList.add('hidden');
+    }
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Tab') {
+        event.preventDefault(); // Bloqueia o comportamento padrão da tecla Tab
+    }
+});
+
+

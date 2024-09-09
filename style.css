@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  background: none; /* Removemos a imagem de fundo */
+  min-height: 100vh;
+  color: #ffffff;
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.topo {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  z-index: 4;
+}
+
+nav {
+  background-color: #ffffff;
+  width: 260px;
+  height: 105vh;
+  display: inline-block;
+  margin-top: -52px;
+  transition-duration: 0.7s;
+  position: relative;
+  z-index: 10;
+  border-right: 7px solid #d3d3d3;
+}
+
+nav.menu_of {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul {
+  margin-top: 10px;
+  overflow-y: auto;
+  height: 90vh;
+  transition-duration: 0.7s;
+}
+
+.menu {
+  margin-top: 15px;
+  display: flow-root;
+  align-items: center;
+  border-top: 1px solid #cbd5dd; /* Cor e espessura da linha */
+  padding: 5px;
+  margin-bottom: -15px;
+}
+
+.menu:hover {
+  background-color: #d2f4fa;
+}
+
+.menu a {
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px; /* Tamanho do ícone */
+  margin: 10px;
+  position: relative; /* Permite o uso de propriedades left, right, etc. */
+  z-index: 9999;
+  color: #050505;
+  transition: margin-left 0.5s ease; /* Transição suave para o movimento do ícone */
+  width: 50px;
+  margin-top: 2px;
+}
+
+.menu-icon:hover {
+  color: #ec420f;
+}
+
+.submenu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #d2f4fa;
+  width: auto;
+  padding-left: 15px;
+  transition: opacity 2s ease, max-height 1s ease;
+}
+
+.menu.active > .submenu {
+  opacity: 3;
+  max-height: 500px; /* Ajuste conforme necessário para o tamanho do submenu */
+}
+
+.menu:hover > .submenu {
+  opacity: 3;
+  max-height: 500px; /* Ajuste conforme necessário para o tamanho do submenu */
+}
+
+.submenu a {
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-right: 4px;
+  font-size: 12px;
+  transition-duration: 0.3s;
+  margin-left: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.submenu a:hover {
+  color: rgb(5, 99, 18);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+iframe {
+  top: 0;
+  margin-top: 45px;
+  border: none;
+  width: 100%;
+  height: 99vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.iframe_inicio {
+  top: 0;
+  margin-top: 37px;
+  border: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+}
+
+.container_botoes {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  gap: 25px; /* Espaçamento entre os botões */
+  margin-right: 2%;
+  transition: 0.5s;
+}
+
+.tela_cheia, .imprimir_pdf {
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 4px;
+  border-radius: 10px;
+  background-color: #fdf9f9;
+  color: #000000;
+  position: relative;
+}
+
+.imprimir_pdf:hover, .tela_cheia:hover {
+  background-color: rgb(255, 255, 255);
+  border: #070707;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #000000;
+}
+
+.titulo {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: -21px;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  text-decoration: none;
+  justify-items: baseline;
+}
+
+.bxs-bar-chart-alt-2 {
+  margin-left: 8px;
+  font-size: 29px;
+  color: #02c0ff;
+  margin-bottom: 8px;
+}
+
+.titulo-projeto {
+  list-style: none;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 42%;
+}
+
+h2 {
+  color: #000000;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+i.bx-fullscreen, i.bxs-file-pdf {
+  color: black;
+}
+
+i {
+  color: #2b5d6d;
+  font-size: 22px;
+  margin-right: 8px;
+}

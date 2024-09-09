@@ -1,39 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALD - Business</title>
-    <link rel="stylesheet" href="styleportifolio.css">
+    <title>Portal B.I</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./image/Logo-Curvas2-1024x491.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    <style>
+     /* Estilos para esconder todos os iframes, exceto o primeiro */
+      iframe {
+          display: none;
+      }
+
+      .iframe_inicio {
+        display: block;
+      }
+
+    </style>
+
 </head>
 
 <body>
-    <img class="logo-ald" src="./image/logo-ald.png">
-    <nav>
+     
+  <video autoplay muted loop id="bgVideo">
+    <source src="./image/VIDEO_POWERBI.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+  
+
+     <div class="topo"> <li class="titulo-projeto"> <h2 id="titulo_projeto"> </h2> </li> 
+
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; <!-- Este é o código HTML para o ícone de hambúrguer (três linhas) -->
+    </div>
+    
+     </div>
+
+    <nav class="menu_of" id="menu_of">
+        <h1 class="titulo"> DASHBOARDS <i class='bx bxs-bar-chart-alt-2'></i> </h1> 
         <ul>
-            <li class="portifolioactive">
-                <a href="index.html">ALD Bioenergia Deciolândia S/A - Bem-vindo ao portifólio Business Intelligence </a>
+            
+              <li class="menu">
+
+                <a href="#" onclick="toggleMenu(event)"> <i class='bx bx-money-withdraw'></i> Pan/Custo </a>
+
+                     <div class="submenu" id="submenu">
+                        <a href="#" onclick="mostrarIframe('id_01','CUSTO OPERACIONAL')">Custo operacional</a>
+                        <a href="#" onclick="mostrarIframe('id_03','PONTO DE EQUILÍBRIO')">Ponto de Equilíbrio</a>
+                        <a href="#" onclick="mostrarIframe('id_04','ACOMPANHAMENTO DE INSUMOS')">Acompanhamento de Insumos </a>
+                    </div>
+               </li> 
+
+               
+              <li class="menu">
+
+                <a href="#" onclick="toggleMenu(event)"> <i class='bx bx-gas-pump'></i> Industria </a>
+
+                     <div class="submenu" id="submenu">
+                      <a href="#" onclick="mostrarIframe('id_06','EFICIÊNCIA INDUSTRIAL')">Eficiência Industrial</a>
+                      <a href="#" onclick="mostrarIframe('id_07','MOVIMENTAÇÕES MATÉRIA PRIMA')">Movimentações Matéria Prima</a>
+                      <a href="#" onclick="mostrarIframe('id_08','ESTOQUE ETANOL')">Estoque Etanol</a>
+                      <a href="#" onclick="mostrarIframe('id_09','INFORMAÇÕES PRODUÇÃO')">Informações de produção</a>
+                    </div>
+               </li> 
+
+
+               <li class="menu">
+
+                <a href="#" onclick="toggleMenu(event)"> <i class='bx bxs-store'></i> Comercial </a>
+
+                     <div class="submenu" id="submenu">
+                        <a href="#" onclick="mostrarIframe('id_05','VENDAS ANALÍTICO')">Vendas Analítico </a>
+                    </div>
+               </li> 
+
+
+ 
             </li>
+            
         </ul>
-    </nav>
-    <div class="card">
-        <h2 class="card-header">Selecione área</h2>
-        <div class="card-content">
-            <ul class="project-list">
-                <li><a href="plan_custo.html">
-                    <i class='bx bx-money-withdraw'></i> PLAN/CUSTO</a></li>
-                <li><a href="industria.html">
-                    <i class='bx bx-gas-pump'></i> INDUSTRIA</a></li>
-                <li><a href="governanca_ti.html">
-                    <i class='bx bx-wifi'></i> GOVERNANÇA TI</a></li>
-                <li><a href="comercial.html">
-                    <i class='bx bxs-store'></i> COMERCIAL </a></li>
 
             </ul>
-        </div>
-    </div>
-</body>
-</html>
+    </nav>
+        
+
+
+          <div class="paineis"> 
+        
+               <iframe id="id_01" src="https://app.powerbi.com/view?r=eyJrIjoiNWJiOWVlYjktZmFmNC00Y2JiLWE2ZmEtOTE4ZjM5YTljZTNiIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>  
+               <iframe id="id_03" src="https://app.powerbi.com/view?r=eyJrIjoiMWI0Y2JmNmItNTczNC00MmNiLWIyZGMtNWJhZjcyMTE1NDJiIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>  
+               <iframe id="id_04" src="https://app.powerbi.com/view?r=eyJrIjoiZjAxZWJhZTQtYmQwNC00N2RlLTkyMmItM2FlYWYzNTUyNGQxIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>
+               <iframe id="id_05" src="https://app.powerbi.com/view?r=eyJrIjoiZDZhMTBmNzAtOWY2Zi00MTVmLWFkM2EtMzUwMzQ0OTFjYzdhIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>
+                
+               <iframe id="id_06" src="https://app.powerbi.com/view?r=eyJrIjoiZDk3M2YwMjYtNWU1NS00ZDMxLTlkZWItY2Y0MjgyMTA4M2U3IiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>
+               <iframe id="id_07" src="https://app.powerbi.com/view?r=eyJrIjoiNDA1MzY2ODYtYzBkNC00NjVhLWI4ODEtYjMzNzc1YzEzMDE2IiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe> 
+               <iframe id="id_08" src="https://app.powerbi.com/view?r=eyJrIjoiNDQwYTYzZmYtN2MxMC00ODhmLWI4OGEtNjA4MDIzNDM2ZDQzIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>
+               <iframe id="id_09" src="https://app.powerbi.com/view?r=eyJrIjoiZmFhZDBkNDQtODJhOS00NjIwLWI0ZDgtNjMyNjM5MTM2MDliIiwidCI6ImQ3ZDU2Mzk1LTU5MjctNDlhYy1hMmJlLTA5MWJhZDkyN2FmNCJ9"></iframe>
+
+
+
+            </div>
+              
+          
+          
+          <div class="container_botoes">
+            <button class="tela_cheia" onclick="AtivarDesativarFS();"><i class='bx bx-fullscreen'></i> Tela cheia</button>
+            <button  class="imprimir_pdf"  onclick="window.print()"><i class='bx bxs-file-pdf'></i> Imprimir / Salvar PDF</button>
+          </div>
+
+          
+           <!-- Função para definir qual iframe aparecer -->
+        
+          <script>
+            function mostrarIframe(id, descricao) {
+                // Esconde todos os iframes
+                var iframes = document.querySelectorAll('iframe');
+                iframes.forEach(function(iframe) {
+                    iframe.style.display = 'none';
+                });
+                
+                // Mostra apenas o iframe com o id correspondente
+                var iframeMostrar = document.getElementById(id);
+                iframeMostrar.style.display = 'block';
+        
+                // Atualiza o título do projeto com base no iframe selecionado
+                document.getElementById('titulo_projeto').textContent = "🟢" + descricao 
+            }
+          </script>
+          
+   
+
+        <script src="script.js"></script>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu_of');
+                // Verifica se o menu está visível com base na opacidade
+        if (menu.style.opacity === '0' || menu.style.opacity === '') {
+        menu.style.opacity = '1'; // Torna o menu visível
+        menu.style.visibility = 'visible'; // Garante que o menu é visível
+        } else {
+        menu.style.opacity = '0'; // Torna o menu invisível
+        menu.style.visibility = 'hidden'; // Remove o menu da tela
+        }}
+        </script>
+
+  
+</div>
+
+        
+        </body>
+        </html>
+        
