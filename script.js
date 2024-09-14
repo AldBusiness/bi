@@ -76,3 +76,13 @@ document.addEventListener('keydown', function(event) {
 });
 
 
+/* funcao para saber se a tela esta sendo usada para smartphone ou tablet e ixibir alerta */
+
+function chekScreenSize() {
+    if (window.innerWidth <= 768){
+        alert('O site não é apropriado para uso em smartphones ou tablets. Por favor, acesse em um computador.');
+        }
+    }
+
+    window.onload = chekScreenSize;
+    window.onresize = chekScreenSize;
